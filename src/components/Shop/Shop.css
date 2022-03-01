@@ -1,0 +1,112 @@
+/* Shop page____________________________________________________ */
+.shop-background {
+  background-image: url("https://rubiktheme.com/demo/at_junior_demo/themes/at_junior//assets/img/bg-breadcrumb.jpg");
+  height: 50vh;
+  background-size: cover;
+}
+.shop-container {
+  width: 60%;
+  margin: 2em auto;
+  color: gray;
+}
+.shop-container .text {
+  padding-top: 3em;
+}
+.shop-container .search-sort {
+  margin-top: 3em;
+  padding: 1em;
+  width: 100%;
+  background-color: #f7f7f9;
+  color: #999;
+  display: flex;
+  justify-content: space-around;
+}
+.shop-container .search-sort .sort {
+  display: flex;
+  align-items: center;
+}
+.shop-container .search-sort .icons i {
+  padding: 0 0.5em;
+}
+.shop-container .search-sort select {
+  background: #fff;
+  padding: 0 2em;
+  height: 36px;
+  color: #999;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  color: #999;
+  width: fit-content;
+  margin: 0 0.5em;
+}
+.shop-container .search-sort .sort {
+  display: flex;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 2em;
+}
+
+/* item card ___________________________________________________________________ */
+.ItemCard-container {
+  margin: 0.5em;
+  box-shadow: 0 0 10px 2px #e5e5e5;
+}
+.ItemCard-container {
+  cursor: pointer;
+}
+.ItemCard-container img {
+  width: 100%;
+  height: 23em;
+}
+.ItemCard-container .text {
+  padding: 0.7em;
+  text-align: center;
+  color: gray;
+}
+.ItemCard-container .text .price {
+  color: gray;
+  padding-top: 1em;
+}
+.ItemCard-container .text button {
+  color: gray;
+  padding: 0.8em;
+  background-color: transparent;
+  margin: 0.8em 0;
+  border: 1px solid gray;
+}
+.ItemCard-container .text button:hover {
+  cursor: pointer;
+  background-color: #798b92;
+  border: 1px solid #798b92;
+  color: white !important;
+}
+.ItemCard-container .text button i {
+  padding-left: 0.3em;
+}
+@media screen and (max-width: 416px) {
+  .shop-container .search-sort .sort {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .cards-container {
+    grid-template-columns: auto !important;
+  }
+  .shop-container {
+    width: 80% !important;
+  }
+  .shop-background {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 920px) and (min-width: 415px) {
+  .cards-container {
+    grid-template-columns: auto auto !important;
+  }
+  .shop-container {
+    width: 80% !important;
+  }
+}

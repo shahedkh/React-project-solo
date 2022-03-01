@@ -1,0 +1,31 @@
+footer {
+  background-image: url("https://rubiktheme.com/demo/at_junior_demo/themes/at_junior/assets/img/modules/appagebuilder/img/bg-features.jpg");
+  height: fit-content;
+  padding: 2em;
+  color: gray;
+  display: grid;
+  text-align: center;
+  grid-gap: 1em;
+  grid-template-areas:
+    ". . . "
+    "footer footer footer ";
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer .copyright {
+  grid-area: footer;
+  font-weight: bold;
+  font-size: 1.3em;
+  /* grid-area: 2 / 1 / span 1 / span 3; */
+  /* row/column */
+}
+@media screen and (max-width: 573px) {
+  footer {
+    grid-template-areas:
+      ". " "." "."
+      "footer" !important;
+  }
+}

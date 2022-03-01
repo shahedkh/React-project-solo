@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+/* Registration page__________________________________________________ */
+.RegistrationPage-container {
+  margin-top: 5vh;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Register_________________________________________________________ */
+.Register-form {
+  padding: 2em;
+  color: gray;
+  border: 1px solid gray;
+}
+
+.Register-form div {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+}
+
+.Register-form input[type="text"],
+.Register-form input[type="email"],
+.Register-form input[type="password"] {
+  width: 100%;
+  background: #fafafa;
+  border: 1px solid #bfbfbf;
+  color: #354155;
+  font-size: 12px;
+  height: 4em;
+  line-height: 16px;
+  padding: 12px 10px 12px 20px;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s all ease;
+}
+.Register-form input[type="submit"],
+.Login-form input[type="submit"] {
+  color: #000;
+  background-color: #bcccd2;
+  font: 400 12px/14px "Montserrat", sans-serif;
+  padding: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 1em;
+}
+.Register-form input[type="submit"]:hover,
+.Login-form input[type="submit"]:hover {
+  background-color: #cedee4;
+  cursor: pointer;
+}
+
+.Register-form h2,
+.Login-form h2 {
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+/* Login_________________________________________________________________ */
+.Login-form {
+  padding: 2em;
+  color: gray;
+  border: 1px solid gray;
+}
+.Login-form div {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+}
+.Login-form input[type="email"],
+.Login-form input[type="password"] {
+  width: 100%;
+  background: #fafafa;
+  border: 1px solid #bfbfbf;
+  color: #354155;
+  font-size: 12px;
+  height: 4em;
+  line-height: 16px;
+  padding: 12px 10px 12px 20px;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s all ease;
+}
+@media screen and (max-width: 800px) {
+  .RegistrationPage-container {
+    grid-template-columns: 90% !important;
+  }
+  .Register-form {
+    margin-bottom: 1em !important;
+    width: 90% !important;
+  }
+  .Login-form {
+    width: 90% !important;
+  }
+}

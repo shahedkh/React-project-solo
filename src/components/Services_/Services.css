@@ -1,0 +1,63 @@
+.Services-container .Slider {
+  height: 80vh;
+  background-size: cover;
+}
+.Services-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4em auto;
+  width: 40%;
+  padding: 5em;
+  background-color: white;
+  box-shadow: 0 0 10px 2px #e5e5e5;
+}
+.Services-form input[type="text"],
+.Services-form input[type="email"],
+.Services-form input[type="date"],
+.Services-form input[type="tel"],
+.Services-form input[type="time"] {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100% !important;
+}
+.Services-form input[type="submit"] {
+  border: none;
+  outline: none !important;
+  background-color: #798b92;
+  color: white;
+  font-size: 14px;
+  padding: 0.7em 1.2em;
+  transition: 500ms;
+  margin-top: 1em;
+  margin: 3em auto 0 auto;
+  text-align: center;
+  border-radius: 0.2em;
+}
+.Services-form .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Services-form input[type="submit"]:hover {
+  background-color: white;
+  border: 1px solid #798b92;
+  color: #798b92;
+  cursor: pointer;
+}
+
+.register-label {
+  padding-top: 2em;
+  font-size: 1.2em !important;
+  color: brown;
+}
+.Serivices-text {
+  width: 60%;
+  text-align: center;
+  margin: 5em auto;
+  color: gray;
+}

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+.checkout-container {
+  width: 60%;
+  margin: 10em auto 5em auto !important;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  border: 1px solid gray;
+}
+.checkout-container p {
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.checkout-container .quantity span {
+  padding: 0 0.8em;
+}
+.cart-items {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-around;
+}
+.cart-items img {
+  width: 12em;
+  height: 10em;
+  padding-right: 2em;
+}
+
+.cart-items h5 {
+  font-size: 1.2em;
+  padding-right: 2em;
+}
+.cart-items .price {
+  color: brown;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.total-price {
+  background-color: rgba(248, 247, 247, 0.685);
+  width: 60%;
+  margin: 1em auto 3em auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.total-price form {
+  padding: 1em 2em;
+  display: flex;
+  align-items: flex-end;
+}
+.total-price form input[type="text"] {
+  border: none;
+  height: fit-content;
+  padding: 1em;
+}
+.total-price form input[type="submit"] {
+  height: 100%;
+  background-color: #bcccd2;
+  border: none;
+  padding: 1em;
+}
+.total-price form input[type="submit"]:hover {
+  background-color: #a7b8be;
+  cursor: pointer;
+}
+.total-price div {
+  color: gray;
+}
+.total-price .discount {
+  font-size: 0.7em;
+  color: brown;
+  font-weight: bold;
+}
+.priceAmount {
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+.newTotal {
+  margin-right: 1em;
+  color: gray;
+}
+@media screen and (max-width: 800px) and (min-width: 361px) {
+  .checkout-container {
+    width: 100% !important;
+    margin: 0 2em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .checkout-container {
+    width: 100% !important;
+    margin: 0 2em;
+  }
+  .total-price {
+    width: 100% !important;
+  }
+}
